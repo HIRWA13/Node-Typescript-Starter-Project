@@ -39,7 +39,7 @@ node-typescript-starter/
 ├── .gitignore       # Git ignore file
 ├── package.json     # Project configuration and dependencies
 ├── pnpm-lock.yaml   # pnpm lock file
-├── README.md        # This file
+├── README.md        # Project Documentation
 └── tsconfig.json    # TypeScript configuration
 ```
 
