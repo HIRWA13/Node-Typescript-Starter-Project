@@ -1,0 +1,19 @@
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Hotel {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  slug String @unique
+  name String
+  description String
+  price_per_night Int
+  rating Float
+  package_included String[]
+  images String[]
+}
